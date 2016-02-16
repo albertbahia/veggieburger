@@ -1,22 +1,23 @@
+.crossout{
+text-decoration: line-through;
+}
+input {
+text-align: center;}
 img {
-padding: 25px;
-}
-h5 {
-padding: 25px;
-text-align: center;
-}
-textarea {
-	padding: 25px;
-	border: 3px solid #cccccc;
-	padding: 5px;
+margin: 0 auto;
 }
 
+h5 {
+text-align: center;
+}
+h3{
+text-align: center;
+}
 .boxer {
  padding: 5px;
  border-style: solid;
  border-width: 2px;
 }
-
 h1 {
 padding: 25px;
 text-align: center;
@@ -28,4 +29,8 @@ text-align: center;
 
 button {
 text-align: center;
+}
+.centerdiv{
+margin: 0 auto;
+padding-left: 45px;
 }

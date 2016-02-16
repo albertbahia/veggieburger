@@ -4,14 +4,12 @@ var router = express.Router();
 router.get("/", function(req, res) {
 	veggieburger.findWhole(function(getsomewholeresults){
 	  console.log("next line is getsomeresults");
-//		res.render('template1', {getsomewholeresults});
-		});
 	veggieburger.findEaten(function(getsomeeatenresults){
 	  console.log("next line is getsomeresults");
-		res.render('template1', {getsomeeatenresults});
+		res.render('template1', {getsomeeatenresults, getsomewholeresults});
 		});
 });
-
+});
 router.post("/", function(req, res) {
 	console.log(req.body.bname);
 	var x = req.body.bname;

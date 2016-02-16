@@ -1,8 +1,9 @@
 $(document).ready(function() {
-console.log("test");
 $(".btn").on("click", function(){
     var bid = $(this).attr("id");
-		
+		var url = window.location.pathname + "eat/" +  bid;
+		console.log(url);
+		window.location.replace(url);
 });		
 });		
 

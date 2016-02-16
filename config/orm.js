@@ -1,14 +1,14 @@
 var connection = require("./connection.js");
 var orm = {
 selectWhole: function(ormcallback) {
-var s = 'SELECT * FROM vbtable WHERE devoured = false';
+var s = 'SELECT * FROM vbtable WHERE devoured = false ORDER BY id ASC';
 connection.query(s, function(err, queryresult) {
 if (err) throw err;
 ormcallback(queryresult);
 });
 },    
 selectEaten: function(ormcallback) {
-var s = 'SELECT * FROM vbtable WHERE devoured = true';
+var s = 'SELECT * FROM vbtable WHERE devoured = true ORDER BY id DESC';
 connection.query(s, function(err, queryresult) {
 if (err) throw err;
 ormcallback(queryresult);
