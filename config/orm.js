@@ -1,4 +1,4 @@
-var connection = require("./connection.js");
+//var connection = require("./connection.js");
 var orm = {
 selectWhole: function(ormcallback) {
 var s = 'SELECT * FROM vbtable WHERE devoured = false ORDER BY id ASC';
