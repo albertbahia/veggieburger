@@ -1,7 +1,7 @@
 var mysql = require("mysql");
 var connection = mysql.createConnection({
 port		 : '3306',
-host     : 'herokuapps.com',
+host     : '',
 user     : 'root',
 password : '',
 database : 'veggieburger'
@@ -15,4 +15,4 @@ return;
 console.log('connected as id ' + connection.threadId);
 });
 
-//module.exports = connection;
+module.exports = connection;
