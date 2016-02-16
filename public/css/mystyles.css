@@ -1,0 +1,31 @@
+img {
+padding: 25px;
+}
+h5 {
+padding: 25px;
+text-align: center;
+}
+textarea {
+	padding: 25px;
+	border: 3px solid #cccccc;
+	padding: 5px;
+}
+
+.boxer {
+ padding: 5px;
+ border-style: solid;
+ border-width: 2px;
+}
+
+h1 {
+padding: 25px;
+text-align: center;
+}
+
+h4 {
+text-align: center;
+}
+
+button {
+text-align: center;
+}

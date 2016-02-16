@@ -1,18 +1,43 @@
-<!DOCTYPE html>
-<html>
-	<h1>VEGGIE BURGERS </h1> 
+<head>
+<link rel="stylesheet" type="text/css" href="css/mystyles.css">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
 <body>
-
-	{{burger_name}}
-
-
-
-
-
-
+ <div class="container">
+	 <div class="row">
+		 <div class="col-md-6">
+	 
+	 <h1>VEGGIE BURGER SHOP </h1>
+	   </div> <!-- close col--> 
+		 </div> <!-- close row-->
+		
+		 <div class="row">
+	<div class= "col-md-2">
+		 <div id = "notchecked">
+	{{#each getsomewholeresults}}
+	<div class="boxer"><h4 data-state=on>	{{this.burger_name}}</h4> <button class="btn btn-sm btn-danger center-block" id="{{this.burger_name}}"> Devour it  </button></div>
+	{{/each}}
+		 </div>
+		 </div><!-- close col-->
+	<div class="col-md-3">
+	<img src="/img/veggieburgersall.jpg" width="400" height="400">	
+	<h5> What kind of veggie burger would you like to eat?</h5>
+<form class="form-inline" method="post" action="/">
+  <div class="form-group">
+    <input type="text" class="form-control" id="exampleInputName2" name="bname" placeholder="your burger choice">
+  </div>
+  <button type="submit" class="btn btn-primary">Request </button>
+</form>
+	</div> <!-- close col -->
+		<div class= "col-md-2">
+		 <div id = "notchecked">
+	{{#each getsomeeatenresults}}
+	<div class="boxer"><h4 data-state=on>	{{this.burger_name}}</h4> <button class="btn btn-sm btn-danger center-block" id="{{this.burger_name}}"> Devour it  </button></div>
+	{{/each}}
+		 </div>
+		 </div><!-- close col-->
+	 </div><!-- close row -->	
+ </div> <!-- close container -->
+<script type ="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/clickster.js" ></script>
 </body>
-
-
-
-
-</html>
