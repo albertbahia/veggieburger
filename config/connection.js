@@ -1,9 +1,9 @@
 var mysql = require("mysql");
 var connection = mysql.createConnection({
-port		 : '3306',
-host     : '',
-user     : 'root',
-password : '',
+port		 : '',
+host     : 'us-cdbr-iron-east-03.cleardb.net/heroku_3b830081a93023d?reconnect=true',
+user     : 'bc162d348b0b12',
+password : 'a520eb56',
 database : 'veggieburger'
 });
 
