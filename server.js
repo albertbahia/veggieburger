@@ -1,7 +1,6 @@
 var express = require("express");
 var expressHandlebars = require("express-handlebars");
 var bodyParser = require("body-parser");
-var methodOverride = require("method-override");
 var routes = require('./controllers/veggieburger_controller.js');
 var PORT = process.env.PORT || 5000;
 var app = express();
