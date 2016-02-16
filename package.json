@@ -4,7 +4,7 @@
 	"engines": {
 		"node": "5.4.1",
 		"npm": "3.3.12"
-	}
+	},
   "description": "choose a veggieburger to eat.",
   "main": "server.js",
   "scripts": {
