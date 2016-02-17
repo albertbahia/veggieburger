@@ -1,5 +1,5 @@
 var mysql = require('mysql');
-//var connection = mysql.createConnection(process.env.JAWSDB_URL);
+var connection = mysql.createConnection(process.env.JAWSDB_URL);
 
 var connection = mysql.createConnection({
   host     : 'tviw6wn55xwxejwj.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
