@@ -1,17 +1,15 @@
-var mysql = require("mysql");
-var connection = mysql.createConnection({
-  host     : 'us-cdbr-iron-east-03.cleardb.net',
-  user     : 'bc162d348b0b12',
-  password : 'a520eb56',
-  database : 'heroku_3b830081a93023d'
+var mysql = require('mysql');
+var connection = mysql.createConnection(process.env.JAWSDB_URL);
+
+connection.connect();
+
+connection.query('SELECT 1 + 1 AS solution', function(err, rows, fields) {
+  if (err) throw err;
+
+  console.log('The solution is: ', rows[0].solution);
 });
 
-connection.connect(function(err) {
-  if (err) {
-    console.error('error connecting: ' + err.stack);
-    return;
-  }
-  console.log('connected as id ' + connection.threadId);
-});
+connection.end();
+
 
 module.exports = connection;
