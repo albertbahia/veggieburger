@@ -10,7 +10,7 @@
 <h1>VEGGIE BURGER SHOP </h1>
 </div> <!-- close col--> 
 </div> <!-- close row-->
-		
+
 <div class="row">
 <div class= "col-md-2">
 <div id = "notchecked">
@@ -28,7 +28,7 @@
 <form class="form-inline" method="post" action="/">
 <div class="form-group">
 <input type="text" class="form-control" id="exampleInputName2" name="bname" placeholder="your burger choice">
-  <button type="submit" class="btn btn-primary">Request </button>
+<button type="submit" class="btn btn-primary">Request </button>
 </div>	
 </form>
 </div>
@@ -36,7 +36,7 @@
 
 <div class= "col-md-2">
 <div id = "checked">
-	<h3> EATEN </h3>	
+<h3> EATEN </h3>	
 {{#each getsomewholeresults}}
 <div class="boxer"><h4 class="crossout">	{{this.burger_name}}</h4> <button class="btn btn-sm btn-danger center-block" id="{{this.burger_name}}"> Devour it  </button></div>
 {{/each}}
