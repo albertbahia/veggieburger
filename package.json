@@ -1,5 +1,5 @@
 {
-  "name": "veggieburger1",
+  "name": "veggieburger",
   "version": "1.0.0",
   "description": "choose a veggieburger to eat.",
   "main": "server.js",
