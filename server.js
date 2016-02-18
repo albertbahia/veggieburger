@@ -1,5 +1,5 @@
 var express = require("express");
-ar expressHandlebars = require("express-handlebars");
+var expressHandlebars = require("express-handlebars");
 var bodyParser = require("body-parser");
 var routes = require('./controllers/veggieburger_controller.js');
 var PORT = process.env.NODE_ENV || 5000;
