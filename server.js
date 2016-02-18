@@ -2,7 +2,7 @@ var express = require("express");
 var expressHandlebars = require("express-handlebars");
 var bodyParser = require("body-parser");
 var routes = require('./controllers/veggieburger_controller.js');
-var PORT = process.env.NODE_ENV || 5000;
+var PORT = process.env.port || 5000;
 
 var app = express();
 app.use(bodyParser.urlencoded({extended: false}));
