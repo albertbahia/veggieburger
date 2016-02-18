@@ -1,12 +1,11 @@
 var mysql = require('mysql');
-var connection = mysql.createConnection(process.env.JAWSDB_URL);
-//var connection = mysql.createConnection({
-//
-//  host     : 'tviw6wn55xwxejwj.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
-//  user     : 'r8nbo7is7sjj69mp',
-  //password : 'adizezavnlhd94cu',
-//  database : 'x33whqas8s34mqb9'
-//});
+var connection = mysql.createConnection({
+  port: 3306,
+  host: 'tviw6wn55xwxejwj.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
+  user: 'lxyj2yrczyglmrt5',
+password : 'i77jhyofr1c96avu',
+  database : 'o4gau1eljmalaza8'
+});
 connection.connect();
 
 connection.query('SELECT 1 + 1 AS solution', function(err, rows, fields) {
