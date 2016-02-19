@@ -9,4 +9,4 @@ app.use('/', routes);
 app.engine('handlebars', expressHandlebars({defaultLayout: 'mainlayout'}));
 app.set("view engine", "handlebars");
 
-app.listen(process.env.PORT);
+app.listen(process.env.PORT || 9000);
