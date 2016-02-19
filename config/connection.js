@@ -7,7 +7,6 @@ var connection = mysql.createConnection({
    database: 'xgiyu6ba2wzk2zzb'
 });
 
-console.log(connection);
 connection.connect();
 connection.query('SELECT 1 + 1 AS solution', function(err, rows, fields) {
   if (err) throw err;
