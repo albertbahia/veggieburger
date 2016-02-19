@@ -1,4 +1,3 @@
-var PORT = Number(process.env.PORT || 5000);
 var express = require("express");
 var expressHandlebars = require("express-handlebars");
 var bodyParser = require("body-parser");
@@ -10,4 +9,4 @@ app.use('/', routes);
 app.engine('handlebars', expressHandlebars({defaultLayout: 'mainlayout'}));
 app.set("view engine", "handlebars");
 
-app.listen(PORT);
+app.listen(process.env.PORT);
