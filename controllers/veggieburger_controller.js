@@ -2,14 +2,14 @@ var express = require("express");
 var veggieburger = require("../models/veggieburger.js");
 var router = express.Router(); 
 router.get("/", function(req, res) {
-res.send("test");
-  //  veggieburger.findWhole(function(getsomewholeresults){
-//    console.log("next line is getsomeresults");
-//    veggieburger.findEaten(function(getsomeeatenresults){
- //     console.log("next line is getsomeresults");
-  //    res.render('template1', {getsomeeatenresults, getsomewholeresults});
-   // });
- // });
+  res.send("test");
+  veggieburger.findWhole(function(getsomewholeresults){
+    console.log("next line is getsomeresults");
+    veggieburger.findEaten(function(getsomeeatenresults){
+      console.log("next line is getsomeresults");
+      res.render('template1', {getsomeeatenresults, getsomewholeresults});
+    });
+  });
 });
 router.post("/", function(req, res) {
   console.log(req.body.bname);
