@@ -10,4 +10,4 @@ app.use('/', routes);
 app.engine('handlebars', expressHandlebars({defaultLayout: 'mainlayout'}));
 app.set("view engine", "handlebars");
 
-app.listen(process.env.NODE_ENV || 3000);
+app.listen(process.env.NODE_ENV);
