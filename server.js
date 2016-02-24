@@ -1,6 +1,7 @@
-var envs = require('dotenv').config();;
+var envs = require('dotenv').config();
 var express = require("express");
-var PORT = process.env.PORT || 3000;
+var methodOverride = require("method-override");
+var PORT = process.env.NODE_ENV || 3000;
 var expressHandlebars = require("express-handlebars");
 var bodyParser = require("body-parser");
 var routes = require('./controllers/veggieburger_controller.js');
