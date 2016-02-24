@@ -7,7 +7,6 @@ var app = express();
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(express.static('public'));
 app.use('/', routes);
-app.use('/
 app.engine('handlebars', expressHandlebars({defaultLayout: 'mainlayout'}));
 app.set("view engine", "handlebars");
 
